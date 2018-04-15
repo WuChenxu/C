@@ -1,0 +1,10 @@
+a demo to show how to link a project w/ files which have same name and functions have same name
+
+it is tested in Macbook Pro.
+for the linux enviroment, the command `ld -r -exported_symbols_list exported_sym.list ${OBJECTS}  -o ${TARGET}.o` should be checked,
+`-exported_symbols_list` should be replaced by `--retain-symbols-file`.
+
+```
+make clean
+make
+```
